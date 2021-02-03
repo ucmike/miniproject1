@@ -9,15 +9,14 @@ import java.util.Scanner;
 class Main {
   public static void main(String[] args) {
      Scanner s = new Scanner(System.in);
-    int num;
-    Random r = new Random();
-    int randomNum = r.nextInt(num)+1;
-  
+    int userNum;
+ 
     System.out.println("Welcome to the guessing game! \nPlease enter any positive whole number.:");
-    num = s.nextInt(); //the number we are starting with.
+    userNum = s.nextInt(); //the number we are starting with.
     Random r = new Random();
-    int randomNum = r.nextInt(num)+1;
+    int randomNum = r.nextInt(userNum)+1;
 
-    System.out.println("A random number to guess has been generated. \nPlease guess a number between 0 and " +num);
+    System.out.println("A random number to guess has been generated.");
+    System.out.println("Please guess a number between 0 and " +userNum);
   }
 }
