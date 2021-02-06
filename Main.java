@@ -13,12 +13,12 @@ class Main {
     int userNum;
 
     System.out.println("Welcome to the guessing game! \nPlease enter any positive whole number.:");
-    if (s.hasNextInt()) userNum = s.nextInt();
+    if (s.hasNextInt()) userNum = s.nextInt(); //exception handling in case user does not enter an integer. Force to 10.
     else {
-      System.out.println("Your input was invalid and the number has been set to 10");
-      userNum = 10;
+      System.out.println("Your input was invalid and the number has been set to 20");
+      userNum = 20;
     }
-    
+    userNum = Math.abs(userNum); //address negative int entries.
     Random r = new Random();
     int randomNum = r.nextInt(userNum) +1;
 
@@ -34,7 +34,7 @@ class Main {
     userGuess = t.nextInt();
     int numTries = 1;
 
-    while (numTries < 10 && userGuess != toGuess) {
+    while (numTries < 20 && userGuess != toGuess) { //right now this limits tries to 20 in case user puts in very high numbers
       if (userGuess < toGuess) {
         System.out.println("Your guess is too low. Guess higher. \nPlease enter your new guess:");
         numTries++;
