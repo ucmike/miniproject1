@@ -13,7 +13,11 @@ class Main {
     int userNum;
 
     System.out.println("Welcome to the guessing game! \nPlease enter any positive whole number.:");
-    userNum = s.nextInt();
+    if (s.hasNextInt()) userNum = s.nextInt();
+    else {
+      System.out.println("Your input was invalid and the number has been set to 10");
+      userNum = 10;
+    }
     
     Random r = new Random();
     int randomNum = r.nextInt(userNum) +1;
