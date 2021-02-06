@@ -48,7 +48,7 @@ class Main {
     }
 
     if (userGuess == toGuess) {
-      System.out.println("GREAT YOU WIN! It took " + numTries + " attempts");
+      System.out.println("GREAT YOU WIN! It took " + numTries + " attempts.");
     }
   }
 }
