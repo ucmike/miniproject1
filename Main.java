@@ -1,7 +1,7 @@
 
 /*
 Mini Project 1
-Group #1: Michael Seitz, YourPartnerName1, YourPartnerName2, YourPartnerName3
+Group #1: Michael Seitz, Hailey Wisniewski, Samuel Green, Jeremiah Shaw
 Date: (whatever date you turn it in)
 */
 import java.util.Random;
@@ -13,9 +13,10 @@ class Main {
     int userNum;
 
     System.out.println("Welcome to the guessing game! \nPlease enter any positive whole number.:");
-    userNum = s.nextInt(); // the number we are starting with.
+    userNum = s.nextInt();
+    
     Random r = new Random();
-    int randomNum = r.nextInt(userNum) + 1;
+    int randomNum = r.nextInt(userNum) +1;
 
     System.out.println("A random number to guess has been generated.");
 
@@ -43,7 +44,7 @@ class Main {
     }
 
     if (userGuess == toGuess) {
-      System.out.println("GREAT YOU WIN. It took " + numTries + " attempts");
+      System.out.println("GREAT YOU WIN! It took " + numTries + " attempts");
     }
   }
 }
