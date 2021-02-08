@@ -13,7 +13,7 @@ class Main {
     int userNum;
 
     System.out.println("Welcome to the guessing game! \nPlease enter any positive whole number.:");
-    if (s.hasNextInt()) userNum = s.nextInt(); //exception handling in case user does not enter an integer. Force to 10.
+    if (s.hasNextInt()) userNum = s.nextInt(); //exception handling in case user does not enter an integer. Force to 20.
     else {
       System.out.println("Your input was invalid and the number has been set to 20");
       userNum = 20;
