@@ -2,7 +2,7 @@
 /*
 Mini Project 1
 Group #1: Michael Seitz, Hailey Wisniewski, Samuel Green, Jeremiah Shaw
-Date: (whatever date you turn it in)
+Date: Feb 15, 2021
 */
 import java.util.Random;
 import java.util.Scanner;
