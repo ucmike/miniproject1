@@ -20,7 +20,7 @@ class Main {
     }
     userNum = Math.abs(userNum); //address negative int entries.
     Random r = new Random();
-    int randomNum = r.nextInt(userNum) +1;
+    int randomNum = r.nextInt(userNum);
 
     System.out.println("A random number to guess has been generated.");
 
@@ -30,7 +30,7 @@ class Main {
   static void playGame(int toGuess, int userNum1) {
     Scanner t = new Scanner(System.in);
     int userGuess;
-    System.out.println("Please guess a number between 0 and " + userNum1);
+    System.out.println("Please guess a number between 0 and " + (userNum1-1)+ " inclusive");
     userGuess = t.nextInt();
     int numTries = 1;
 
