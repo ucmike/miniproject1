@@ -30,7 +30,7 @@ class Main {
   static void playGame(int toGuess, int userNum1) {
     Scanner t = new Scanner(System.in);
     int userGuess;
-    System.out.println("Please guess a number between 0 and " + (userNum1-1)+ " inclusive");
+    System.out.println("Please guess a number between 0 and " + (userNum1-1)+ " inclusive.:");
     userGuess = t.nextInt();
     int numTries = 1;
 
